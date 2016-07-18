@@ -1,0 +1,109 @@
+
+.main-header {
+
+	@include custom-padding(.5em, .5em);
+	@include custom-margin-bottom(50px);
+
+	@media #{$mq-medium-wide} {
+		@include custom-margin-bottom(0px);
+	}
+
+	.toggle-menu {
+		background-color: $color-container;
+		border: 1px solid $color-border-container;
+		border-radius: 5px;
+		float: #{$misc-float-right};
+		@include custom-padding(9px, 9px, 10px, 10px);
+		.icon-bar {
+			@include display(block);
+			@include custom-width(22px);
+			@include custom-margin(4px);
+			background-color: $color-toggle-btn;
+			height: 2px;
+			&:last-child {
+				margin-bottom: 4px;
+			}
+		}
+
+		@media #{$mq-medium-wide} {
+			@include display(none);
+		}
+		&:focus {
+			outline: transparent;
+		}
+	}
+
+	.student-name {
+		margin: 0px 0px 15px 0px;
+		display: inline-block;
+		@media #{$mq-medium-wide} {
+			margin: 0px;
+			display: block;
+		}
+
+		@media #{$mq-large-wide} {
+			float: #{$misc-float-left};
+		}
+
+		a {
+			@include display(block);
+			@include custom-txt-align(center);
+
+			@media #{$mq-medium-wide} {
+				padding: 20px 10px;
+				background-color: $color-background;
+			}
+		}
+	}
+
+
+	.header-nav.active {
+		display: none;
+		@media #{$mq-medium-wide} {
+			display: block;
+		}
+	}
+
+	.main-nav {
+
+		@include custom-margin(5px);
+		padding-left: 0px;
+
+		@media #{$mq-medium-wide} {
+			@include custom-txt-align(center);
+		}
+
+		@media #{$mq-large-wide} {
+			float: #{$misc-float-right};
+		}
+
+		a {
+			@include display(block);
+			@include custom-txt-align(center);
+		}
+
+		li {
+			@media #{$mq-medium-wide} {
+				@include display(inline-block);
+			}
+
+			@media #{$mq-large-wide} {
+				float: #{$misc-float-left};
+				margin-left: 15px;
+			}
+
+			a {
+				@include custom-margin-bottom(5px);
+				@extend %txt-properties;
+				padding: 10px;
+				background-color: $color-container;
+
+				@media #{$mq-medium-wide} {
+					padding: 20px 10px;
+					background-color: $color-background;
+				}
+			}
+		}
+	}
+}
+

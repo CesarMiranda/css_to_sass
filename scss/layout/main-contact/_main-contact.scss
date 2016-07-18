@@ -1,0 +1,21 @@
+.main-contact {
+	@include custom-margin-bottom(70px);
+	@include custom-txt-align(center);
+
+	h3 {
+		text-transform: uppercase;
+	}
+
+	p {
+		@include custom-font-size(1.2em);
+
+		&:nth-of-type(1) {
+		@include custom-margin(30px, 50px);
+
+		}
+	}
+
+	.fa {
+		margin-right: 5px;
+	}
+}

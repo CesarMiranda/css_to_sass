@@ -1,0 +1,51 @@
+.portfolio {
+	@include custom-margin(50px, 50px);
+
+	.col {
+		@media #{$mq-medium-wide} {
+			@include custom-width(50%);
+			float: #{$misc-float-left};
+		}
+
+		@media #{$mq-large-wide} {
+			@include custom-width(33.3333333%);
+			float: #{$misc-float-left};
+		}
+	}
+
+	.container {
+		background-color: $color-container;
+		@extend %box-shadow;
+	}
+	
+	img {
+		@extend %transition;
+
+	  	&:hover {
+			@extend %transform;
+		}
+	}
+
+	h3 {
+		@include custom-padding(60px, 60px);
+		@include custom-txt-align(center);
+		text-transform: uppercase;
+		margin: 0px;
+
+		@media #{$mq-medium-wide} {
+			@include custom-padding(40px, 40px);
+		}
+	}
+
+	h4 {
+		@include custom-margin(30px, 15px);
+		@include custom-txt-align(center);
+	}
+
+	p {
+		@include custom-margin-bottom(50px);
+		@include custom-txt-align(center);
+		font-weight: normal;
+	}
+
+}

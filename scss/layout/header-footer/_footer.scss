@@ -1,0 +1,69 @@
+.main-footer {
+
+	.student-name {
+		@include custom-font-size(1.3em);
+		float: #{$misc-float-left};
+
+		@media #{$mq-medium-wide} {
+			@include custom-margin(30px);
+		}
+
+		a {
+			@media #{$mq-medium-wide} {
+				padding: 20px 10px;
+			}
+		}
+	}
+
+	.container {
+		border-top: 1px solid $color-border-container;
+	}
+
+	.col {
+		@extend %clearfix;
+	}
+
+	.footer-nav {
+		@include display(none);
+
+		@media #{$mq-medium-wide} {
+			@include custom-margin-bottom(0px);
+			@include display(block);
+			float: #{$misc-float-right};
+		}
+
+		a {
+			@include display(block);
+			@include custom-txt-align(center);
+		}
+	
+		li {
+			@media #{$mq-medium-wide} {
+				float: #{$misc-float-left};
+				margin-left: 15px;
+			}
+
+			a {
+				@include custom-margin-bottom(5px);
+				@extend %txt-properties;
+
+				@media #{$mq-medium-wide} {
+					padding: 20px 10px;
+					background-color: $color-background;
+				}
+			}
+		}
+	}
+
+	.back-top {
+		@include custom-font-size(1.3em);
+		float: #{$misc-float-right};
+		text-transform: uppercase;
+
+		@media #{$mq-medium-wide} {
+			@include display(none);	
+		}
+	}
+
+}
+

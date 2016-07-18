@@ -1,0 +1,42 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	@include text(1rem, $color-text, $stack-default, 1.6);
+	background-color: $color-background;
+}
+
+a {
+	@extend %transition;
+	text-decoration: none;
+	color: $color-text;
+	
+	&:hover {
+		color: $color-link-hover;
+		text-decoration: none;
+	}
+}
+
+img {
+	@include display(block);
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+ul li {
+	list-style: none;
+}
+
+p {
+	color: $color-text;
+}
+
+.wrap {
+	min-height: calc(100vh - 95px);
+}

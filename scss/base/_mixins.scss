@@ -1,0 +1,40 @@
+
+// Margins and paddings
+
+@mixin custom-margin($margin-top, $margin-bottom: null) {
+	margin-top: $margin-top;
+	margin-bottom: $margin-bottom; 
+}
+
+@mixin custom-padding($padding-top, $padding-bottom, $padding-left: null, $padding-right: null) {
+	padding: $padding-top $padding-right $padding-bottom $padding-right;
+}
+
+@mixin custom-margin-bottom($margin-bottom) {
+	margin-bottom: $margin-bottom;
+}
+
+// Text
+
+@mixin text($font-size, $color, $font-family: null, $l-height: null) {
+	font-size: $font-size;
+	color: $color;
+	font-family: $font-family;
+	line-height: $l-height;
+}
+
+@mixin custom-font-size($f-size) {
+	font-size: $f-size;
+}
+
+@mixin custom-txt-align($txt-align) {
+	text-align: $txt-align;
+}
+
+@mixin display($custom-display) {
+	display: $custom-display;
+}
+
+@mixin custom-width($c-width) {
+	width: $c-width;
+}

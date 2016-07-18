@@ -1,0 +1,131 @@
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+/* ---- Float clearfix ---- */
+
+/*.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}*/
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	/*.container {
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}*/
+
+	/*.main-header .student-name {
+		margin: 0px;
+	}*/
+
+	/*.main-footer .student-name {
+		float: left;
+	}*/
+
+	/*.main-header {
+		margin-bottom: 0px;
+	}*/
+
+	/*.main-footer .footer-nav {
+		float: right;
+	}*/
+
+	/*.main-nav {
+		text-align: center;
+	}*/
+
+	/*.main-nav li {
+		display: inline-block;
+	}*/
+	
+	/*.main-footer .footer-nav li {
+		float: left;
+		margin-left: 15px;
+	}*/
+
+	/*.main-nav li a,
+	.student-name a,
+	.main-footer .footer-nav li a {
+		padding: 20px 10px;
+		background-color: #f0f8ff;
+	}*/
+
+/*	.main-footer .footer-nav {
+		display: block;
+		margin-bottom: 0px;
+	}*/
+
+	/*.main-footer .student-name {
+		margin: 0px;
+	}*/
+
+	/*.main-footer .student-name {
+		float: none;
+	}*/
+
+	/*.main-footer .back-top {
+		display: none;
+	}*/
+
+	/*.portfolio h3 {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}*/
+
+	/*.about-student p {
+		margin-top: 0px;
+	}*/
+
+	/* ---- Columns ---- */
+
+	/*.about-student .primary.col {
+		width: 60%;
+		float: left;
+	}
+
+	.about-student .secondary.col {
+		width: 40%;
+		float: right;
+	}
+
+	.portfolio .col {
+		width: 50%;
+		float: left;
+	}*/
+
+}
+
+@media (min-width: 992px) {
+
+	/* ---- Columns ---- */
+
+	/*.portfolio .col {
+		width: 33.3333333%;
+		float: left;
+	}*/
+
+	/*.main-nav {
+		float: right;
+	}*/
+
+	/*.student-name {
+		float: left;
+	}*/
+
+	/*.main-nav li {
+		float: left;
+		margin-left: 15px; 
+	}*/
+}

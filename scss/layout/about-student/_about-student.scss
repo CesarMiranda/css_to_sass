@@ -1,0 +1,25 @@
+.about-student {
+
+	.primary.col {
+		@media #{$mq-medium-wide} {
+			@include custom-width(60%);	
+			float: #{$misc-float-left};
+		}
+	}
+
+	.secondary.col {
+		@media #{$mq-medium-wide} {
+			@include custom-width(40%);
+			float: #{$misc-float-right};
+		}
+	}
+
+	p {
+		@include custom-margin(45px);
+		@include custom-font-size(1.2em);
+
+		@media #{$mq-medium-wide} {
+			@include custom-margin(0px);
+		}
+	}
+}

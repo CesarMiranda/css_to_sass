@@ -1,0 +1,9 @@
+
+.container {
+	@extend %clearfix;
+	@media #{$mq-medium-wide} {
+		@include custom-width(80%);
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+}
