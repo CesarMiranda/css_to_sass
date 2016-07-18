@@ -1,14 +1,14 @@
 .about-student {
 
 	.primary.col {
-		@media #{$mq-medium-wide} {
+		@include tablet {
 			@include custom-width(60%);	
 			float: #{$misc-float-left};
 		}
 	}
 
 	.secondary.col {
-		@media #{$mq-medium-wide} {
+		@include tablet {
 			@include custom-width(40%);
 			float: #{$misc-float-right};
 		}
@@ -16,9 +16,9 @@
 
 	p {
 		@include custom-margin(45px);
-		@include custom-font-size(1.2em);
+		@include custom-font-size($txt-size-medium);
 
-		@media #{$mq-medium-wide} {
+		@include tablet {
 			@include custom-margin(0px);
 		}
 	}

@@ -38,3 +38,17 @@
 @mixin custom-width($c-width) {
 	width: $c-width;
 }
+
+// Media Queries
+
+@mixin tablet {
+	@media (min-width: #{$mq-medium-wide}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$mq-large-wide}) {
+		@content;
+	}
+}

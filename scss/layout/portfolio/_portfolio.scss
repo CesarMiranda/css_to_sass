@@ -2,12 +2,12 @@
 	@include custom-margin(50px, 50px);
 
 	.col {
-		@media #{$mq-medium-wide} {
+		@include tablet {
 			@include custom-width(50%);
 			float: #{$misc-float-left};
 		}
 
-		@media #{$mq-large-wide} {
+		@include desktop {
 			@include custom-width(33.3333333%);
 			float: #{$misc-float-left};
 		}
@@ -32,7 +32,7 @@
 		text-transform: uppercase;
 		margin: 0px;
 
-		@media #{$mq-medium-wide} {
+		@include tablet {
 			@include custom-padding(40px, 40px);
 		}
 	}

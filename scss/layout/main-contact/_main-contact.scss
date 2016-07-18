@@ -7,10 +7,10 @@
 	}
 
 	p {
-		@include custom-font-size(1.2em);
+		@include custom-font-size($txt-size-medium);
 
 		&:nth-of-type(1) {
-		@include custom-margin(30px, 50px);
+			@include custom-margin(30px, 50px);
 
 		}
 	}

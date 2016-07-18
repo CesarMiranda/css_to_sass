@@ -1,15 +1,15 @@
 .main-footer {
 
 	.student-name {
-		@include custom-font-size(1.3em);
+		@include custom-font-size($txt-size-big);
 		float: #{$misc-float-left};
 
-		@media #{$mq-medium-wide} {
+		@include tablet {
 			@include custom-margin(30px);
 		}
 
 		a {
-			@media #{$mq-medium-wide} {
+			@include tablet {
 				padding: 20px 10px;
 			}
 		}
@@ -26,7 +26,7 @@
 	.footer-nav {
 		@include display(none);
 
-		@media #{$mq-medium-wide} {
+		@include tablet {
 			@include custom-margin-bottom(0px);
 			@include display(block);
 			float: #{$misc-float-right};
@@ -38,7 +38,7 @@
 		}
 	
 		li {
-			@media #{$mq-medium-wide} {
+			@include tablet {
 				float: #{$misc-float-left};
 				margin-left: 15px;
 			}
@@ -47,7 +47,7 @@
 				@include custom-margin-bottom(5px);
 				@extend %txt-properties;
 
-				@media #{$mq-medium-wide} {
+				@include tablet {
 					padding: 20px 10px;
 					background-color: $color-background;
 				}
@@ -56,11 +56,11 @@
 	}
 
 	.back-top {
-		@include custom-font-size(1.3em);
+		@include custom-font-size($txt-size-big);
 		float: #{$misc-float-right};
 		text-transform: uppercase;
 
-		@media #{$mq-medium-wide} {
+		@include tablet {
 			@include display(none);	
 		}
 	}

@@ -9,8 +9,8 @@ $color-toggle-btn: 			#888;
 
 // Media Queries
 
-$mq-medium-wide: '(min-width: 769px)';
-$mq-large-wide: '(min-width: 992px)';
+$mq-medium-wide: 769px;
+$mq-large-wide: 992px;
 
 // Font Stack
 
@@ -20,3 +20,9 @@ $stack-default: 'Varela Round', sans-serif;
 
 $misc-float-left: 	'left';
 $misc-float-right:	'right';
+
+// Font sizes
+
+$txt-size-small: 1rem;
+$txt-size-medium: 1.2em;
+$txt-size-big: 1.3em;

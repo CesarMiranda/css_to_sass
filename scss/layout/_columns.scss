@@ -1,4 +1,4 @@
 .col {
-	@include custom-padding(0, 0, 1rem, 1rem);
+	@include custom-padding(0, 0, $txt-size-small, $txt-size-small);
 }
 

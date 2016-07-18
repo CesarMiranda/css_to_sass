@@ -4,7 +4,7 @@
 	@include custom-padding(.5em, .5em);
 	@include custom-margin-bottom(50px);
 
-	@media #{$mq-medium-wide} {
+	@include tablet {
 		@include custom-margin-bottom(0px);
 	}
 
@@ -25,7 +25,7 @@
 			}
 		}
 
-		@media #{$mq-medium-wide} {
+		@include tablet {
 			@include display(none);
 		}
 		&:focus {
@@ -36,12 +36,12 @@
 	.student-name {
 		margin: 0px 0px 15px 0px;
 		display: inline-block;
-		@media #{$mq-medium-wide} {
+		@include tablet {
 			margin: 0px;
 			display: block;
 		}
 
-		@media #{$mq-large-wide} {
+		@include desktop {
 			float: #{$misc-float-left};
 		}
 
@@ -49,7 +49,7 @@
 			@include display(block);
 			@include custom-txt-align(center);
 
-			@media #{$mq-medium-wide} {
+			@include tablet {
 				padding: 20px 10px;
 				background-color: $color-background;
 			}
@@ -57,10 +57,12 @@
 	}
 
 
-	.header-nav.active {
-		display: none;
-		@media #{$mq-medium-wide} {
-			display: block;
+	.header-nav {
+		&.active {
+			@include display(none);
+			@include tablet {
+				@include display(block);
+			}
 		}
 	}
 
@@ -69,11 +71,11 @@
 		@include custom-margin(5px);
 		padding-left: 0px;
 
-		@media #{$mq-medium-wide} {
+		@include tablet {
 			@include custom-txt-align(center);
 		}
 
-		@media #{$mq-large-wide} {
+		@include desktop {
 			float: #{$misc-float-right};
 		}
 
@@ -83,11 +85,11 @@
 		}
 
 		li {
-			@media #{$mq-medium-wide} {
+			@include tablet {
 				@include display(inline-block);
 			}
 
-			@media #{$mq-large-wide} {
+			@include desktop {
 				float: #{$misc-float-left};
 				margin-left: 15px;
 			}
@@ -98,7 +100,7 @@
 				padding: 10px;
 				background-color: $color-container;
 
-				@media #{$mq-medium-wide} {
+				@include tablet {
 					padding: 20px 10px;
 					background-color: $color-background;
 				}
